@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="style.css" rel="stylesheet">
+        <script src="data.js"></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="nav">
+            <h1 id="title">QUIZTIME</h1>
+            <select class="menu" id="topicSelect">
+                <option value="computerScience">Computer Science</option>
+                <option value="javaScript">JavaScript</option>
+            </select>
+        </div>
+        <div class="addCard">
+            <h2 class="add">Add to current topic:</h2>
+            <input id="questionInput" placeholder="Question" />
+            <input id="answerInput" placeholder="Answer" />
+            <button class="addButton" id="addCardButton">Add Card</button>
+
+        </div>
+        
+        <div class="card" id="cardDisplay" onclick="flipCard()">
+
+        </div>
+        <div>
+            <button class="button" id="button" onclick="nextCard()">NEXT QUESTION</button>
+        </div>
+        <footer>
+            <div class="footer">
+
+            </div>
+        </footer>
+
+    </body>
+</html>
