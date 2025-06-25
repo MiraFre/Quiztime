@@ -1,12 +1,12 @@
-//const button = document.getElementById("button"); //next question button
-const topicSelect = document.getElementById("topicSelect"); //chose the topic
-const cardDisplay = document.getElementById("cardDisplay"); //displays the card
+// Variable declarations
+const topicSelect = document.getElementById("topicSelect");     //chose the topic
+const cardDisplay = document.getElementById("cardDisplay");     //displays the card
 const questionInput = document.getElementById("questionInput");
 const answerInput = document.getElementById("answerInput");
-const addButton = document.getElementById("addCardButton"); //adds new question to local storage
+const addButton = document.getElementById("addCardButton");     //adds new question to local storage
 
-let currentTopic = topicSelect.value; //the selected topic
-let currentCards = []; //cards for the current topic
+let currentTopic = topicSelect.value;   //the selected topic
+let currentCards = [];                  //cards for the current topic
 let currentIndex = 0;
 
 //change the topic from dropdown
@@ -81,9 +81,3 @@ async function loadAndRenderCards(topic) {
 //initialize the app
 loadAndRenderCards(currentTopic);
 
-/*
-button.addEventListener("click", nextQuestion);
-
-function nextQuestion() {
-
-} */
